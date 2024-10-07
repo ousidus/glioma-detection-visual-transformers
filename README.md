@@ -37,9 +37,50 @@ Follow these steps to set up the project locally:
 You can run the model or the REST API using the following instructions:
 
 ### Run the Model Locally
+1. Ensure your environment is set up and dependencies are installed.
+
+2. Train the model:
+    ```bash
+    Ensure your environment is set up and dependencies are installed.
+3. Use the trained model to detect gliomas in images:
+    ```bash
+    python detect.py --image_path /path/to/image
+
 ### Run the REST API
+1. Start the API server:
+    ```bash
+    python app.py  # Assumes Flask or FastAPI is being used
+2. Send a POST request to the /detect endpoint with an MRI/CT image:
+
+    ```bash
+    curl -X POST http://localhost:5000/detect -F "image=@/path/to/image"
+
 ### Scheduled Tasks
+To retrain the model periodically, use the following command:
+
+    ```bash
+    python retrain_model.py
 
 ## Contributing Guidelines
+We welcome contributions from the community. To contribute:
+
+1. Fork the repository.
+
+2. Create a new branch for your feature or bug fix:
+    ```bash
+    git checkout -b feature-name
+
+3. Ensure your code follows our coding standards:
+
+* Use black for code formatting.
+* Run flake8 for linting.
+* Write unit tests for new features in the tests/ directory.
+
+4. Submit a pull request to the main branch.
+
+* Ensure that all tests pass before submitting.
+* Provide a detailed description of your changes.
 
 ## License
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
+
