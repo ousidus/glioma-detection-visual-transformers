@@ -13,4 +13,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["python", "app.py"]  # Adjust according to your main application file
+CMD ["python", "app.py"]
