@@ -2,6 +2,8 @@
 
 ## **Project Overview**
 This repository implements a glioma detection system using Visual Transformers. Gliomas are a type of tumor that occur in the brain and spinal cord. Early detection is crucial for improving treatment outcomes. Visual Transformers leverage attention mechanisms in image processing, offering improved performance over traditional methods like Convolutional Neural Networks (CNNs).
+You can read about performance and results in my [Master diploma](https://www.overleaf.com/read/cfbyrxrjmvhv#932c28).
+
 
 This project includes:
 - **Data preparation**: MRI/CT images, data augmentation using GANs.
